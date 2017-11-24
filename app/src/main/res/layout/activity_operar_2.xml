@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/lblprimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="introduce PRIMER valor"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/txtPrimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblprimer"
+        />
+
+    <TextView
+        android:id="@+id/lblsegundo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="introduce segundo valor"
+        android:layout_below="@id/txtPrimer"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/txtSegundo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblsegundo"
+        />
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/txtSegundo"
+        android:text="+"
+        android:onClick="operar"
+        />
+
+    <Button
+        android:id="@+id/btnRestar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_toRightOf="@id/btnSumar"
+         android:layout_below="@id/txtSegundo"
+        android:text="-"
+        android:onClick="operar"
+        />
+
+    <Button
+        android:id="@+id/btnMultiplicar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_toRightOf="@id/btnRestar"
+        android:layout_below="@id/txtSegundo"
+        android:text="x"
+        android:onClick="operar"
+        />
+
+    <Button
+        android:id="@+id/btnDividir"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_toRightOf="@id/btnMultiplicar"
+        android:layout_below="@id/txtSegundo"
+        android:text="/"
+        android:onClick="operar"
+        />
+
+    <TextView
+        android:id="@+id/lblResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSumar"
+        android:text="Resultado"
+        android:layout_margin="30px"
+        />
+
+</RelativeLayout>
